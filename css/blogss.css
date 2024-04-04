@@ -1,0 +1,674 @@
+body {
+    font-family: Poppins;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+.menu_container a{
+    color: black;
+}
+
+/*-------------------------------------*/
+/*************Navbar*******************/
+/*-----------------------------------*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*background: linear-gradient(rgba(250, 213, 143, 0.897), white);*/
+    background-color: rgb(252, 234, 201);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 10000;
+}
+
+.logo {
+    margin-left: 13px;
+    width: 13%;
+}
+
+.navitems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 85%;
+}
+
+.navitems h1 {
+    font-weight: 500;
+    font-size: 20px;
+    color: orange;
+    cursor: pointer;
+}
+
+.menu_navbar_div{
+    display: none;
+}
+
+
+.soon{
+    opacity: 0;
+    height: 0;
+    width: 0;
+    position: absolute;
+    transform: translate(-100px , 10px);
+}
+
+.apple_logo1:hover + .soon{
+    opacity: 1;
+    height: 40px;
+    width: 140px;
+    background-color: black;
+    border: solid 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+
+
+/******* navbar images ******************/
+/*--------------------------------------*/
+
+.navplayimg {
+    width: max(40px, 2vw);
+    margin-top: 3px;
+}
+
+
+/******** Main Body*******************/
+/*--------------------------------------*/
+.mainbody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/******** Main page 1 *******************/
+/*--------------------------------------*/
+
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:min(95% , 1200px);
+}
+
+.heading1 {
+    text-align: center;
+    word-spacing: 5px;
+    width: 70%;
+    font-size: min(4.4vw, 50px);
+    margin-top: 20px;
+}
+
+.section1 h5 {
+    text-align: center;
+    word-spacing: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: min(2vw, 20px);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/******** Main page 1 images ************/
+/*--------------------------------------*/
+
+
+.manscooter {
+    margin-top: 1vw;
+    width: max(400px, 30vw);
+    width: 45%;
+    margin-bottom: 23px;
+}
+
+/* ------------------------- */
+
+.pointsimg1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.pointsdiv {
+    width: 45%;
+}
+
+.hrline {
+    border: solid 0px;
+    background-color: orange;
+    height: 1px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.points {
+    color: rgb(28, 122, 28);
+    font-size: min(1.5vw, 30px);
+}
+
+.sec1paradiv {
+    width: min(85% , 1200px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(13, 133, 29);
+    font-weight: 450;
+    text-align: justify;
+    font-size: min(2vw, 25px);
+}
+
+
+/******** Main page 2 images *******************/
+/*--------------------------------------*/
+
+.featureimg {
+    width: max(200px, 20vw);
+}
+
+/******** Main page 2 *******************/
+/*--------------------------------------*/
+
+.section2 {
+    margin-top: 5vw;
+    width: min(85% , 1200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.section2 h1{
+    font-size: min(4vw, 50px);
+    text-align: center;
+}
+.content-steps p{ 
+    font-size: min(2vw , 23px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.section2 li{
+    padding-top: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    word-spacing: 2px;
+    font-size: min(2.2vw , 23px);
+    text-align: justify;
+}
+
+.content-steps-heading{
+    font-weight: 600;
+    font-size: min(2.2vw , 25px);
+}
+
+.content-steps-heading2{
+    font-weight: 600;
+    font-size: min(2.2vw , 25px);
+    text-align: center;
+    margin-bottom: 50px !important;
+}
+
+@media screen and (max-width:900px)
+{
+    .section1 h5{
+        font-size: 20px;
+    }
+    .section2 h1{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .section2 li{
+        margin-top: -6px;
+    }
+    .content-steps-heading2{
+        font-size: 20px;
+    }
+    .sec1paradiv2{
+        margin-top: 20px !important;
+        width: 100% !important;
+    }
+}
+
+.content-list {
+    list-style-type: circle !important; /* Apply desired list style */ 
+}
+
+.sec1paradiv2{
+    margin-top: 50px;
+    width: 80%;
+}
+
+
+
+/***********Footer **************/
+/*-----------------------------*/
+
+footer {
+    margin-top: 150px;
+    position: relative;
+    background: #1fa70d;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slogan {
+    font-size: max(2.5vw, 40px);
+    font-weight: 650;
+    color: white;
+
+}
+
+.footer_info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.follow{
+    font-size: max(1.5vw, 30px);
+    font-weight: 600;
+}
+
+.footerlinkss{
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.terms{
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footerlinkss:hover{
+    color: white;
+}
+.social_img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.contact,
+.address {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: justify;
+    align-items: center;
+}
+
+.address{
+    width: min(30vw, 300px);
+}
+.footer_info p{
+    color: white;
+}
+
+.social_img:hover {
+    transform: translateY(-10px);
+}
+
+.rights {
+    color: #fff;
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../images/wave.png);
+    background-size: 1000px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 100vw;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/********** Media query for small screen *********/
+/*-----------------------------------------*/
+
+
+@media screen and (max-width:900px)
+{
+    /********** navbar *********/
+    /*------------------------*/
+
+    .navitems{
+        display: none;
+    }
+
+    .menu_navbar_div{
+        display: flex;
+        justify-content: end;
+        width: 80%;
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+
+    .menu_container{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        position: fixed;
+        top:60px;
+        width:300px;
+        height: 100%;
+        background-color: whitesmoke;
+    }
+    
+    .mobile_nav{
+        margin-left: 50px;
+    }
+    .topping{
+        margin-top: 40px;
+    }
+    .navbtn{
+        height: 50px;
+        position: fixed;
+        margin-right: 30px;
+        background-color: #1fa70d00;
+        border: solid 0px;
+        top:3px;
+    }
+    .mobile_nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .apple{
+        background-color: black;
+        color: rgb(255, 255, 255);
+        width: 70%;
+        height: 50px;
+        border-radius: 7px;
+    }
+
+    .coming{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    /**************navbar images *****************/
+
+
+    .menu_icon{
+        width: 46px;
+        cursor: pointer;
+    }
+    .navplayimg_mobile{
+        width: 70%;
+    }
+    .apple_logo{
+        width: 40px;
+    }
+
+    /**************Font sizes of sections *****************/
+
+    .sec1paradiv p ,.featurepara ,.points{
+        font-size: max(13px, 2vw);
+    }
+
+    .soon_para1 ,.knowmore_button1 ,.knowmore_para1,.callback_button1,
+    .callback_para1 ,.message_para ,.aboutpara, .about_paraimg p{
+        font-size:max(15px, 2vw);
+    }
+    /**************Section Images *****************/
+
+    .featureimg{
+        width: max(140px, 20vw);
+    }
+
+    .callback_img1 ,.message_img ,.knowmore_img{
+        width:max(250px, 40vw);
+    }
+
+    /**************section-width *****************/
+
+    .soon_div ,.knowmore_div ,.about_paraimg ,.aboutpara{
+        width: 100%;
+    }
+
+    /*****************footer ****************/
+
+    .contact ,.address{
+        width:40%;
+    }
+    .footerlinkss{
+        font-size:max(15px, 2vw);
+    }
+    
+}
+
+
+/**********Media query for mobile**********/
+/*****************************************/
+
+
+@media screen and (max-width:500px)
+{
+
+    /*********navbar*************/
+
+    .logo{
+        width: 40%;
+    }
+
+
+    /********section1************/
+
+    .heading1{
+        font-size: 25px;
+        width: 100%;
+    }
+    .section1 h5{
+        font-size: 10px;
+        width: 100%;
+    }
+    .section1 ,.section2 ,.section3 ,.section4 ,.section5{
+        width: 94%;
+    }
+    .points{
+        font-size: 11px;
+    }
+    .manscooter{
+        width: 190px;
+    }
+    .hrline{
+        width: 97%;
+        margin: 0;
+    }
+    .sec1paradiv p{
+        margin-left: 10px;
+        width: 97%;
+    }
+
+    .section1 h5{
+        font-size: 13px;
+    }
+
+    .content-steps h1{
+        font-size: 20px;
+    }
+    .content-steps li{
+        font-size: 14px;
+    }
+    .section2{
+        width: 85%;
+    }
+    .content-steps-heading2{
+        text-align: center;
+    }
+
+    .content-steps-heading{
+        font-size: 14px;
+    }
+    /**********section2*******************/
+
+    .featureimgdiv{
+        flex-direction: column;
+    }
+
+    .featureheading{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .featurepara{
+        margin: 3px;
+        word-spacing: 1px;
+        letter-spacing: 0px;
+        width: auto;
+    }
+
+    /**************footer ************/
+
+    .slogan{
+        font-size: 20px;
+    }
+
+    .footer_info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact ,.address{
+        width: 100%;
+    }
+
+    .follow{
+        font-size: 18px;
+    }
+    .social_img{
+        width: 25px;
+        height: 25px;
+    }
+    .socials
+    {
+        width:100%;
+    }
+    .address{
+        width: 250px;
+    }
+
+}

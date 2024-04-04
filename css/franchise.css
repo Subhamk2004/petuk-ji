@@ -1,0 +1,919 @@
+body {
+    font-family: Poppins;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.menu_container a {
+    color: black;
+}
+
+/*-------------------------------------*/
+/*************Navbar*******************/
+/*-----------------------------------*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*background: linear-gradient(rgba(250, 213, 143, 0.897), white);*/
+    background-color: rgb(252, 234, 201);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 10000;
+}
+
+.logo {
+    margin-left: 13px;
+    width: 13%;
+}
+
+.navitems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 85%;
+}
+
+.navitems h1 {
+    font-weight: 500;
+    font-size: 20px;
+    color: orange;
+    cursor: pointer;
+}
+
+.menu_navbar_div {
+    display: none;
+}
+
+
+.soon {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    position: absolute;
+    transform: translate(-100px, 10px);
+}
+
+.apple_logo1:hover+.soon {
+    opacity: 1;
+    height: 40px;
+    width: 140px;
+    background-color: black;
+    border: solid 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+/******* navbar images ******************/
+/*--------------------------------------*/
+
+.navplayimg {
+    width: max(40px, 2vw);
+    margin-top: 3px;
+}
+
+/******* Section 1  ******************/
+/*----------------------------------*/
+
+.mainbody {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.section1 {
+    width: min(75%, 1200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-spacing: 2px;
+    letter-spacing: 0.3px;
+    font-size: min(2.3vw, 23px);
+}
+
+.sec1_h2 {
+    font-size: min(2.3vw, 23px);
+    text-align: center;
+    color: green;
+    font-weight: 500;
+}
+
+.sec1_para {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.franchise_img {
+    width: max(17%, 160px);
+}
+
+.sec1_h3 {
+    font-size: min(2.3vw, 23px);
+    font-weight: 600;
+    margin-top: 35px;
+}
+
+
+/**********scetion 2************/
+
+.section2 {
+    width: min(75%, 1200px);
+    margin-top: 10px;
+    font-size: min(2.3vw, 23px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.sec2_h2 {
+    font-size: min(2.3vw, 23px);
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+
+/**********section 3 *************/
+
+.section3 {
+    width: min(70%, 1000px);
+    font-size: min(2vw, 20px);
+    word-spacing: 1px;
+    letter-spacing: 0.2px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3_h1 {
+    font-size: min(2.3vw, 23px);
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.benefit_heading {
+    font-size: min(2vw, 23px);
+    font-weight: 600;
+}
+
+.benefit_parentdiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.benefit_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.4s ease;
+    width: 46%;
+}
+
+.benefit_div:hover {
+    transform: translateY(-10px);
+}
+
+.benefit_div:hover {
+    background-color: rgba(255, 115, 0, 0.425);
+}
+
+.benefit_div:hover .hrline {
+    height: 2px;
+    width: 90%;
+    opacity: 1;
+}
+
+.hrline {
+    width: 0%;
+    height: 2px;
+    opacity: 0;
+    border: solid 0px;
+    background-color: orange;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+.benefit_img {
+    width: min(25%, 120px);
+    margin-top: 10px;
+}
+
+.benefit_para {
+    width: 90%;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.section3 h1 {
+    text-align: center;
+}
+
+
+
+/***************section 4 *********/
+
+.section4 {
+    width: min(75%, 1200px);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section4 h1 {
+    font-size: min(2.3vw, 23px);
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.callback_div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: min(900px, 90%);
+    border: solid 1px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 220px;
+}
+
+.callback_img {
+    width: max(16%, 150px);
+    margin: 10px;
+}
+
+.callback_paradiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 89%;
+    margin-top: 20px;
+    font-size: min(2vw, 20px);
+}
+
+.callback_para {
+    width: 80%;
+    text-align: justify;
+    word-spacing: 1px;
+    letter-spacing: 0.3px;
+}
+
+.callback_button {
+    width: 170px;
+    height: 40px;
+    font-size: 20px;
+    border: solid 0;
+    border-radius: 7px;
+    font-weight: 500;
+    background-color: rgb(243, 169, 32);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+/************section 5*************/
+
+.section5 {
+    width: min(75%, 1000px);
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.callback2_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    width: 65%;
+    font-size: min(2vw, 20px);
+}
+
+.callback2_img {
+    width: max(30%, 200px);
+}
+
+.callback2_paraimg {
+    width: 40px;
+}
+
+.callback2_button {
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    height: 45px;
+    gap: 5px;
+    border: solid 0px;
+    border-radius: 10px;
+    background-color: orange;
+    margin-top: 20px;
+}
+
+/********* section 6***************/
+
+.section6 {
+    width: 600px;
+    margin-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 0 15px rgb(201, 201, 201);
+    border-radius: 10px;
+}
+
+form p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.formdetail_div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.formside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.inp {
+    width: 250px;
+    height: 45px;
+    border: solid 0px;
+    border-radius: 6px;
+    font-size: 15px;
+    text-indent: 10px;
+    background-color: rgb(230, 224, 224);
+}
+
+.continue {
+    width: 520px;
+    height: 45px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+
+/********SECTION 7*******/
+
+.section7 {
+    width: min(75%, 1200px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 10px;
+    font-size: min(2vw, 25px);
+}
+
+.section7 h1 {
+    margin-bottom: 5px;
+}
+
+.faq_div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: solid 0px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    align-items: center;
+}
+.faq_div:hover{
+    background-color: rgb(233, 233, 233);
+}
+.faqs{
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.reveal_ans {
+    font-size: 34px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(113, 233, 119);
+    border:solid 0px;
+    border-radius: 10px;
+    width: 8%;
+    margin: 5px;
+    height: 45px;
+}
+
+.reveal_ans:hover{
+    background-color: rgb(10, 185, 10);
+}
+
+.ans{
+    display: none;
+}
+
+/***********Footer **************/
+/*-----------------------------*/
+
+footer {
+    margin-top: 150px;
+    position: relative;
+    background: #1fa70d;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slogan {
+    font-size: max(2.5vw, 40px);
+    font-weight: 650;
+    color: white;
+
+}
+
+.footer_info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.follow {
+    font-size: max(1.5vw, 30px);
+    font-weight: 600;
+}
+
+.footerlinkss {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.terms {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footerlinkss:hover {
+    color: white;
+}
+
+.social_img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.contact,
+.address {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.address p {
+    width: min(30vw, 300px);
+}
+
+.footer_info p {
+    color: white;
+}
+
+.social_img:hover {
+    transform: translateY(-10px);
+}
+
+.rights {
+    color: #fff;
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../images/wave.png);
+    background-size: 1000px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 100vw;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+
+
+/********** Media query for small screen *********/
+/*-----------------------------------------*/
+
+
+@media screen and (max-width:900px) {
+    /********** navbar *********/
+    /*------------------------*/
+
+    .navitems {
+        display: none;
+    }
+
+    .menu_navbar_div {
+        display: flex;
+        justify-content: end;
+        width: 80%;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .menu_container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: fixed;
+        top: 60px;
+        width: 300px;
+        height: 100%;
+        background-color: whitesmoke;
+    }
+
+    .mobile_nav {
+        margin-left: 50px;
+    }
+
+    .topping {
+        margin-top: 40px;
+    }
+
+    .navbtn {
+        height: 50px;
+        position: fixed;
+        margin-right: 30px;
+        background-color: #1fa70d00;
+        border: solid 0px;
+        top: 3px;
+    }
+
+    .mobile_nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .apple {
+        background-color: black;
+        color: rgb(255, 255, 255);
+        width: 70%;
+        height: 50px;
+        border-radius: 7px;
+    }
+
+    .coming {
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /**************navbar images *****************/
+
+
+    .menu_icon {
+        width: 46px;
+        cursor: pointer;
+    }
+
+    .navplayimg_mobile {
+        width: 70%;
+    }
+
+    .apple_logo {
+        width: 40px;
+    }
+
+
+    /*****************footer ****************/
+
+    .contact,
+    .address {
+        width: 40%;
+    }
+
+    .footerlinkss {
+        font-size: max(15px, 2vw);
+    }
+
+}
+
+
+/**********Media query for mobile**********/
+/*****************************************/
+
+
+@media screen and (max-width:500px) {
+
+    /*********navbar*************/
+
+    .logo {
+        width: 40%;
+    }
+
+    /********section 1 **********/
+
+    .sec1_heading {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .franchise_img {
+        width: 100px;
+    }
+
+    .main {
+        margin-top: 80px;
+    }
+
+    .section1 {
+        width: 90%;
+        margin: 0;
+    }
+
+    .sec1_para {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+
+    /***********section 2 ************/
+
+    .section2 {
+        width: 90%;
+    }
+
+    .section2 p {
+        font-size: 15px;
+        word-spacing: 2px;
+        letter-spacing: 0.4px;
+    }
+
+    .callback_img {
+        width: 100px;
+    }
+
+    .callback_heading {
+        font-size: 16px;
+    }
+
+    .callback_para {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .callback_button {
+        width: 150px;
+    }
+
+    /********** scetion 3 **********/
+
+    .section3 {
+        width: 90%;
+    }
+
+    .section3 h1 {
+        font-size: 17px;
+    }
+
+    .benefit_heading {
+        font-size: 15px;
+    }
+
+    .benefit_para {
+        font-size: 14px;
+    }
+
+    /************all sections heading font-size**********/
+
+    .sec1_h2,
+    .sec1_h3,
+    .sec2_h2,
+    .sec3_h1,
+    .section4 h1 {
+        font-size: 16px;
+    }
+
+    /********section 4************/
+
+    .section4 {
+        width: 90%;
+    }
+
+    /********section 5************/
+
+    .section5 {
+        width: 90%;
+    }
+
+    .callback2_div {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .callback2_div h1 {
+        text-align: center;
+    }
+
+    .callback2_img {
+        width: 100px;
+    }
+
+
+    /***********form div***********/
+
+    .section6 {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .inp {
+        width: 140px;
+    }
+
+    .continue {
+        width: 300px;
+    }
+
+    /********section 7**********/
+
+    .section7 {
+        width: 90%;
+        font-size: 15px;
+    }
+
+
+    /**************footer ************/
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    .footer_info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact,
+    .address {
+        width: 100%;
+    }
+
+    .follow {
+        font-size: 18px;
+    }
+
+    .social_img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .socials {
+        width: 100%;
+    }
+
+    .address p {
+        width: 250px;
+    }
+
+}

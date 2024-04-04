@@ -1,0 +1,24 @@
+{
+  "name": "petukji",
+  "version": "1.0.0",
+  "description": "Petuk Ji is an online food delivery service in meerut designed to help user to easily compare food with a various aspect in a single petuk ji compare screen to order food from their favourite restaurants near them with lower price & confirmed hygiene factor. On the other hand, we are providing Zero Commission food delivery options to food joints. Brand Owned by One17 Technologies, Meerut.",
+  "main": "js/script.js",
+  "scripts": {
+    "test": "echo \"This is petuk ji online food delivery service in meerut\" && exit 1"
+  },
+  "keywords": [
+    "petuk ji",
+    "petukji",
+    "online food delivery in meerut",
+    "online food delivery",
+    "meerut",
+    "zomato",
+    "swiggy"
+  ],
+  "author": "Petuk Ji",
+  "license": "One17 Technologies",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "firebase": "7.1.0"
+  }
+}
